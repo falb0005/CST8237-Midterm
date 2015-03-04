@@ -4,8 +4,6 @@
 #include <cstdlib>
 #include <stdio.h>
 
-float _rotationSpeed = 1.0f;
-
 TestBox::~TestBox()
 {
   SDL_DestroyTexture(_testTexture);
@@ -42,6 +40,7 @@ void TestBox::Initialize(SDL_Renderer *renderer)
 
 void TestBox::Update(float dt)
 {
+	//printf("rotation speed: %f\n", _rotationSpeed);
   _transform.rotation.z += _rotationSpeed * dt;
 }
 

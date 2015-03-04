@@ -18,7 +18,7 @@ public:
   void SetRotationSpeed(float rotationSpeed);
   ~TestBox();
 protected:
-
+	float _rotationSpeed = 1.0f;
 
   SDL_Texture *_testTexture;
   SDL_Rect _testTextureBounds;
